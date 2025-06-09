@@ -16,7 +16,7 @@ Fine-tuning BERT (Bidirectional Encoder Representations from Transformers) invol
 ### 3.1 Statistical analysis of the dataset
 The dataset consists of 50,000 movie reviews, evenly split between positive and negative sentiments: 25,000 labeled as “positive” and 25,000 as “negative.” Each review is stored as a string of varying length. On average, reviews contain approximately 1,309 characters, with the shortest review being 32 characters and the longest reaching up to 13,704 characters. While fine-tuning the BERT model for this task, the review lengths were calculated by splitting the reviews by spaces. The average length was about 231 words, with the minimum being 4 words and the maximum being 2470. To see if there is a bias in the review length between the positive and negative sentiment classes, the mean, min and max review lengths were calculated. As can be seen in figure 1, the review lengths were quite similar on average (mean), but the maximum lengths are quite different, with the maximum length being 1522 for the negative reviews and 2470 for the positive ones. This balanced class distribution and diversity in review lengths make the dataset suitable for binary sentiment classification tasks.
 
-!([https://github.com/zeniamazhar/BERT/blob/main/descriptiveStatistics])
+![](https://github.com/zeniamazhar/BERT/blob/main/descriptiveStatistics)
 ##### Figure 1. Descriptive statistics of review lengths of reviews separated by positive and negative sentiment classes
 
 ### 3.2 Fien-tuning the BERT model
@@ -47,7 +47,7 @@ The fine-tuned BERT model performed really well on the test set, with a macro f1
 Moreover, the confusion matrix generated for the fine-tuned BERT model (figure 2) also shows that the number of false positives and false negatives were similar in number, with the number of false positives being 320, while the number of false negatives being 297. Majority of the
 predictions made were correct, with 4641 correctly predicted negative reviews and 4742 correctly predicted positive reviews.
 
-![https://github.com/zeniamazhar/BERT/blob/main/confusionMatrix]
+![](https://github.com/zeniamazhar/BERT/blob/main/confusionMatrix)
 ##### Figure 2. Confusion matrix generated for the fine-tuned BERT model
 
 ## 5. Conclusion
