@@ -19,7 +19,7 @@ The dataset consists of 50,000 movie reviews, evenly split between positive and 
 ![](https://github.com/zeniamazhar/BERT/blob/main/descriptiveStatistics)
 ##### Figure 1. Descriptive statistics of review lengths of reviews separated by positive and negative sentiment classes
 
-### 3.2 Fien-tuning the BERT model
+### 3.2 Fine-tuning the BERT model
 
 #### Preprocessing Steps
 Firstly, missing data was removed by using the dropna() method on the dataframe obtained from the dataset, which would make it so there aren’t any missing values causing issues in the training or testing/validation stages. The sentiment labels were converted from categorical to numerical forms, by mapping the ‘positive’ sentiment class to 1, and the ‘negative’ sentiment class to 0, in order to fine-tune the BERT model with the data (since it’s not possible to do this with the categories directly). The BERTTokenizer was used to split the text into subwords units (i.e: unfriendly would get turned into “un”, “friend”, “ly”), and also truncate the reviews that are longer than 512 tokens, while padding the ones that are short (which allows shorter reviews to have the same shape as the longer ones).
