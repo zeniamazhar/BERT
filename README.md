@@ -1,4 +1,4 @@
-# BERT
+# Fine-tuning BERT model for sentiment analysis of IMDB movie reviews
 
 ## 1. Introduction
 In this project, I aimed to use the IMDB movie reviews dataset, which consists of positive and negative reviews, to fine-tune a BERT model from Hugging Face to classify a given review as a positive or a negative one. The fine-tuned BERT model had an accuracy of 93.83%, a macro F1 score of 93.83%, and a balanced precision and recall for the negative and positive classes.
