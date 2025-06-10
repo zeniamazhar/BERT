@@ -6,7 +6,8 @@ In this project, I aimed to use the IMDB movie reviews dataset, which consists o
 ## 2. Problem Description
 The IMDB movie reviews dataset consists of 2 columns: 
 - The reviews
-- The sentiment (positive or negative). <br>
+- The sentiment (positive or negative).
+
 The review is the comment left by someone on a movie, while the sentiment reflects whether the review said positive things about the movie (positive review), or  negative things about it (negative review). This dataset contains a total of 50,000 reviews (25,000 positive and 25,000 negative reviews). The task in this project was to design a model aimed to perform binary sentiment analysis based on the reviews and predict whether a given review is positive or negative.
 
 Fine-tuning BERT (Bidirectional Encoder Representations from Transformers) involves taking a pre-trained BERT model and adapting it to a specific task, such as text classification, by training it further on a labeled dataset. BERT is pre-trained on a large corpus using unsupervised objectives like masked language modeling and next sentence prediction, allowing it to learn rich contextual word embeddings—meaning each word’s representation is informed by the surrounding words in both directions. During fine-tuning, the model retains these embeddings and updates its internal weights using task-specific data, enabling it to capture nuances relevant to the new task while leveraging its deep understanding of language. This process typically involves adding a small task-specific layer on top of BERT (e.g., a classification head) and training the entire model end-to-end for a few epochs.
